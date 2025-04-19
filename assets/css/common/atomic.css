@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* 한줄 말줄임 */
+.ellipsis{display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+/* 스크롤 바 숨기기 */
+.invisible-scroll{-ms-overflow-style:none; scrollbar-width:none;}
+.invisible-scroll::-webkit-scrollbar{display:none;}
+/* Input 엘리먼트 다국어 설정 */
+input.de{ime-mode:inactive;}
+input.dk{ime-mode:active;}
+input.al{ime-mode:auto;}
+input.oe{ime-mode:disabled;}
+/* 그리드 시스템 초기화 */
+[class^=grid]{clear:none; float:left;}
+.row:not(.flex)::after{position:initial; display:block; clear:both;}
+.row.flex{display:flex; flex-wrap: wrap;}
+.rowfull{display:inline-block; width:100%; vertical-align:top;}
+/* 웹 접근성 숨김 처리 (Web Accessibility Initiative) */
+.wai{position:absolute !important; z-index:-999 !important; opacity:0 !important; width:0 !important; height:0 !important;}
+/* Atomic */
+.fa { flex:auto }
+.transition-500ms { transition: ransition- 500ms; }
+.transition-900ms { transition: ransition- 900ms; }
