@@ -9,15 +9,89 @@
 @font-face {
     font-family: "flaticon";
     src: url("../fonts/flaticon.ttf") format("truetype"),
-
 }
+
+
+.header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a strong {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+
+        align-items: center;
+        text-align: left;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 5px;
+    }
+}
+
 
 .banner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, #0d1228, #222b62);
+    background-image: url("../images/background/pattern-3.png");
+    background: rgb(5, 22, 130);
     color: white;
     padding: 60px;
     /* Increased padding */
@@ -209,6 +283,16 @@
         text-align: center;
     }
 
+    .succession-planning-section .content {
+        padding: 0;
+        text-align: left;
+    }
+
+    .succession-planning-section .image {
+        padding: 0;
+    }
+
+
     .succession-planning-section .content,
     .succession-planning-section .image {
         max-width: 100%;
@@ -253,7 +337,7 @@
     position: relative;
     background: #ffffff;
     padding: 30px 25px;
-    width: 360px;
+    max-width: 360px;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     transition: background-color 0.3s ease;
@@ -413,9 +497,15 @@
         text-align: center;
     }
 
+
+    .why-choose-section .content h2 {
+        font-size: 25px;
+    }
+
     .why-choose-section .content,
     .why-choose-section .image {
         max-width: 100%;
+        padding: 0;
     }
 
     .why-choose-section .content ul li {
@@ -1063,7 +1153,8 @@ body {
 
 .consultation-form button {
     padding: 12px;
-    background-color: #007bff;
+    background-color: rgb(14, 32, 153);
+    ;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -1073,7 +1164,7 @@ body {
 }
 
 .consultation-form button:hover {
-    background-color: #0056b3;
+    background-color: #09386c;
     transform: translateY(-2px);
 }
 
@@ -1085,6 +1176,14 @@ body {
     .consultation-section .container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .consultation-content {
+        padding: 0;
+    }
+
+    .consultation-content h2 {
+        font-size: 20px;
     }
 
     .consultation-content,
@@ -1179,9 +1278,20 @@ body {
 }
 
 @media (max-width: 768px) {
-    .trust-section {
+
+    .trust-section,
+    .container {
         flex-direction: column;
         text-align: center;
+        padding: 8px;
+    }
+
+    .trust-content {
+        padding: 4px;
+    }
+
+    .trust-content h2 {
+        font-size: 28px;
     }
 
     .trust-content,
@@ -1303,7 +1413,7 @@ body {
 
 .faq-title {
     font-size: 1.2rem;
-    color: #007bff;
+    color: #000000;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
