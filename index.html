@@ -174,9 +174,22 @@
                         <div class="icon-box">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/headset.png" alt="Headset Icon" />
                         </div>
-                        <h3>24/7 Support</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h3>Special Child Trust</h3>
+                        <p>Secure your special child's future with a legally structured trust that ensures continuous
+                            care, financial stability, and protection tailored to their unique needs.</p>
                     </div>
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/headset.png" alt="Headset Icon" />
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our expert team is available round the clock to answer your queries and offer guidance
+                            throughout your estate and succession planning journey.</p>
+                    </div>
+                </div>
+                <div class="service-button">
+                    <button>Download Broucher</button>
+                    <button>Enquire</button>
                 </div>
             </div>
         </section>
@@ -189,17 +202,35 @@
                     <h2>Why Choose Nexgen Estate Planning Solutions?</h2>
                     <ul>
                         <li>
-                            <h6>Experienced & Expert Team:</h6> Our expert team of seasoned lawyers specializes
-                            in estate planning, ensuring that your legacy is safeguarded with the highest level of
-                            expertise.
+                            <div class="">
+                                <img src="./assets/images/Icon/Countries icon-min.png" alt="">
+                                <h6 class="text-color">Experienced & Expert Team</h6>
+                            </div>
+                            <span class="text-des-color">
+                                Our expert team of seasoned lawyers specializes
+                                in estate planning, ensuring that your legacy is safeguarded with the highest level of
+                                expertise.
+                            </span>
                         </li>
                         <li>
-                            <h6>Personalized Solutions:</h6> Every family is unique, and we offer personalized
-                            solutions to our clients that make us the best estate planner in india.
+                            <div>
+                                <img src="./assets/images/Icon/Countries icon-min.png" alt="">
+                                <h6 class="text-color">Personalized Solutions</h6>
+                            </div>
+                            <span class="text-des-color">
+                                Every family is unique, and we offer personalized
+                                solutions to our clients that make us the best estate planner in india.
+                            </span>
                         </li>
                         <li>
-                            <h6>Peace of Mind:</h6> We handle all the legalities and complex procedures so that
-                            you can entirely focus on your family and the future that matters most to you.
+                            <div>
+                                <img src="./assets/images/Icon/Countries icon-min.png" alt="">
+                                <h6 class="text-color">Peace of Mind</h6>
+                            </div>
+                            <span class="text-des-color">
+                                We handle all the legalities and complex procedures so that
+                                you can entirely focus on your family and the future that matters most to you.
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -219,23 +250,22 @@
                             height="100%" />
                     </div>
                     <div class="info-area">
-                        <h2>Meet Our Director</h2>
+                        <h2>Meet Our Expert</h2>
                         <h3>Dr. Deepak Jain</h3>
                         <p class="positions">
-                            Founder & Director - Nexgen Estate Planning Solutions<br>
-                            Co-founder & Director - AAFM® India<br>
-                            Founder Director - Financial Literacy Advisory Body India
+                            CWM®, CFP®, Estate & Succession Planner<br>
+                            Founder, Nexgen Estate Planning Solutions<br>
                         </p>
                         <p class="bio">
-                            Dr. Deepak Jain is the guiding force behind Nexgen Estate Planning Solutions. He has
-                            successfully assisted numerous clients in preserving their wealth and ensuring a hassle-free
-                            succession journey. His impressive qualifications and deep-rooted experience have
-                            established him as a trusted name in the industry.
+                            Dr. Deepak Jain is a leading authority in estate and succession planning, with over 20 years
+                            of experience and a track record of helping 2 Lakh+ families secure their financial
+                            legacies. As the founder of Nexgen Estate Planning Solutions, he specializes in will
+                            drafting, trust creation, and tailored wealth transfer strategies.
                         </p>
                         <p class="bio">
-                            He holds a Doctorate in Wealth Management, is a Chartered Wealth Manager (CWM®), a Certified
-                            Financial Planner (CFP), and has completed advanced training in Estate Planning, Wealth
-                            Management, and Financial Strategies.
+                            With credentials including CWM®, CFP®, and a Doctorate in Wealth Management, Dr. Jain is
+                            dedicated to helping families and business owners safeguard their wealth and transfer it
+                            across generations with confidence and clarity.
                         </p>
                     </div>
                 </div>
@@ -400,7 +430,6 @@
                     </p>
                     <ul>
                         <li><strong>Call Us Now:</strong> +91 9599799018</li>
-                        <li><strong>Or fill out the quick form</strong>
                         </li>
                     </ul>
                 </div>
@@ -408,7 +437,17 @@
                     <form>
                         <input type="text" name="name" placeholder="full name" required>
                         <input type="email" name="email" placeholder="email" required>
-                        <input type="tel" name="phone" placeholder="phone number" required>
+                        <input type="tel" name="MasterInner_txtMobile" id="phone" placeholder="Phone No." required
+                            pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number"
+                            onkeypress="return isNumberKey(event)" oninput="validatePhoneNumber(this)" maxlength="10">
+                        <select name="preferred_time" required>
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="morning">Will Drafting</option>
+                            <option value="afternoon">Trust Setup</option>
+                            <option value="evening">Power of Attorney (POA)</option>
+                            <option value="evening">Living Will</option>
+                            <option value="evening">Special Child Trust</option>
+                        </select>
                         <select name="preferred_time" required>
                             <option value="" disabled selected>Preferred Time for Call</option>
                             <option value="morning">Morning</option>

@@ -128,13 +128,12 @@
     margin-bottom: 10px;
 }
 
-.content ul li::before {
+/* .content ul li::before {
     content: '\2714';
-    /* Checkmark icon */
     color: #FFD700;
     font-size: 20px;
     margin-right: 10px;
-}
+} */
 
 .form-container {
     background: white;
@@ -424,6 +423,29 @@
     margin-left: 5px;
 }
 
+.service-button {
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-button button {
+    padding: 14px;
+    background-color: #00509e;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.service-button button:hover {
+    background-color: #065bb1;
+}
+
+
+
 /* Why Choose Nexgen Estate Planning Solutions? */
 
 .why-choose-section {
@@ -469,12 +491,31 @@
     align-items: flex-start;
 }
 
-.why-choose-section .content ul li::before {
-    content: "✔";
-    color: #007bff;
-    font-size: 1.2rem;
-    margin-right: 10px;
-    line-height: 1.2;
+.why-choose-section .content ul li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 90px 4px 8px;
+    background-color: #00509e;
+    border-radius: 12px;
+}
+
+.why-choose-section .content ul li div img {
+    width: 36px;
+}
+
+.why-choose-section .content ul li div h1 {
+    color: white;
+}
+
+.text-color {
+    color: white;
+    font-size: 16px;
+}
+
+.text-des-color {
+    color: black;
 }
 
 .why-choose-section .image {
