@@ -324,6 +324,121 @@
     line-height: 1.6;
 }
 
+.milestone-image-container {
+
+    text-align: left;
+}
+
+.milestone-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.milestone-points {
+    position: relative;
+    max-width: 100%;
+
+}
+
+.milestone-point-first {
+    position: absolute;
+    top: -506px;
+    left: 200px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-first p {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.milestone-point-second {
+    position: absolute;
+    top: -434px;
+    left: -10px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-second p {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.milestone-point-third {
+    position: absolute;
+    top: -358px;
+    left: 200px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-third p {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.milestone-point-fourth {
+    position: absolute;
+    top: -300px;
+    left: -10px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-fourth p {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.milestone-point-fivth {
+    position: absolute;
+    top: -220px;
+    left: 200px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-fivth p {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.milestone-point-sixth {
+    position: absolute;
+    top: -154px;
+    left: -10px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-sixth p {
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.milestone-point-seventh {
+    position: absolute;
+    top: -94px;
+    left: 200px;
+    width: 36%;
+    height: 50%;
+}
+
+.milestone-point-seventh p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -743,6 +858,7 @@ body {
 }
 
 .milestone-section {
+    display: none;
     margin-top: 0px;
     padding: 20px;
 }
@@ -777,6 +893,25 @@ body {
 
 .milestones span {
     font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .milestone-section {
+        display: block;
+    }
+
+    .milestone-point {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .milestone-icon {
+        font-size: 20px;
+    }
+
+    .milestone-point p {
+        font-size: 12px;
+    }
 }
 
 /* Responsive */
