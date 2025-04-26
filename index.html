@@ -95,7 +95,20 @@
                     <input type="tel" name="MasterInner_txtMobile" id="phone" placeholder="Phone No." required
                         pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number"
                         onkeypress="return isNumberKey(event)" oninput="validatePhoneNumber(this)" maxlength="10">
-                    <textarea name="MasterInner_message" placeholder="Your Message" rows="4" required></textarea>
+                    <select name="preferred_time" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="morning">Will Drafting</option>
+                        <option value="afternoon">Trust Setup</option>
+                        <option value="evening">Power of Attorney (POA)</option>
+                        <option value="evening">Living Will</option>
+                        <option value="evening">Special Child Trust</option>
+                    </select>
+                    <select name="preferred_time" required>
+                        <option value="" disabled selected>Preferred Time for Call</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
                     <div class="captcha-container">
                         <div class="g-recaptcha" data-sitekey="6LfvNMsUAAAAABK7t3ucXGRBaUTcHcUR6QvCiQTY"></div>
                     </div>
@@ -271,47 +284,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="milestone-section">
-                    <h4>Milestones That Define His Impact</h4>
-                    <ul class="milestones">
-                        <li><span>📊</span> Trained 50,000+ finance professionals</li>
-                        <li><span>🏦</span> Leadership at Citibank, Standard Chartered, ING Vysya</li>
-                        <li><span>🎤</span> Led 300+ workshops on wealth & estate planning</li>
-                        <li><span>🚀</span> Co-founded AAFM® India, FLAB India, Nexgen</li>
-                        <li><span>📘</span> Author: *Estate Planning for Financial Advisors*</li>
-                        <li><span>🌐</span> Global speaker & finance forum contributor</li>
-                        <li><span>🧠</span> Published articles on estate planning & risk</li>
-                    </ul>
-                </div>
-                <div class="milestone-section">
-                    <div class="milestone-image-container">
-                        <img src="./assets/images/milesstons.png" alt="Milestones" class="milestone-image">
-                        <div class="milestone-points">
-                            <div class="milestone-point-first">
-                                <p>Trained 50,000+ finance professionals across India and abroad</p>
-                            </div>
-                            <div class="milestone-point-second">
-                                <p>Held leadership roles at Citibank, Standard Chartered, ING Vysya</p>
-                            </div>
-                            <div class="milestone-point-third">
-                                <p>Led 300+ successful workshops on wealth and estate planning</p>
-                            </div>
-                            <div class="milestone-point-fourth">
-                                <p>Co-founded AAFM® India and founded Nexgen Estate Planning Solutions & FLAB India</p>
-                            </div>
-                            <div class="milestone-point-fivth">
-                                <p>Author of the book Estate Planning for Financial Advisors</p>
-                            </div>
-                            <div class="milestone-point-sixth">
-                                <p>Featured speaker at global finance forums and conferences</p>
-                            </div>
-                            <div class="milestone-point-seventh">
-                                <p>Contributed to leading articles and research papers on estate planning, risk
-                                    management, and portfolio structuring</p>
-                            </div>
-                        </div>
+                <div class="milesstones">
+                    <h2>Milestones</h2>
+                    <div class="milesstone">
+                        <img src="./assets/images/milesstones.svg" alt="">
+                    </div>
+                    <div class="milesstone-desktop">
+                        <img src="./assets/images/milesstones-desktop.svg" alt="">
                     </div>
                 </div>
+
             </div>
         </section>
 
