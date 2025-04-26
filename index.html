@@ -83,9 +83,12 @@
             <div class="content">
                 <h1>Nexgen Estate Planning Solutions Pvt. Ltd.</h1>
                 <h5 class="" style="color: white;"><strong>Secure Your Legacy, Protect Your Future</strong></h5>
-                <p>At Nexgen, we don’t just plan estates but protect lifetimes of effort.</p>
-                <p>Trusted by thousands across India, we simplify Wills, Trusts, Powers of Attorney, Estate and
-                    succession planning to safeguard your and your family’s future with utmost clarity and care.</p>
+                <span class="content-desktop">
+                    <p class="">At Nexgen, we don’t just plan estates but protect lifetimes of effort.</p>
+                    <p class="">Trusted by thousands across India, we simplify Wills, Trusts, Powers of Attorney, Estate
+                        and
+                        succession planning to safeguard your and your family’s future with utmost clarity and care.</p>
+                </span>
             </div>
             <div class="form-container">
                 <h4>Request for More Information</h4>
@@ -115,6 +118,13 @@
                     <button name="MasterInner_submit" type="submit">Send Me More Info</button>
                 </form>
             </div>
+            <span class="content-mobile">
+                <p class="content-desc" style="color: white; margin-top: -50px;">At Nexgen, we don’t just plan estates
+                    but protect lifetimes of effort.</p>
+                <p class="content-desc" style="color: white;">Trusted by thousands across India, we simplify Wills,
+                    Trusts, Powers of Attorney, Estate and
+                    succession planning to safeguard your and your family’s future with utmost clarity and care.</p>
+            </span>
         </div>
 
         <!-- Why Succession Planning Matters -->
@@ -201,13 +211,15 @@
                     </div>
                 </div>
                 <div class="service-button">
-                    <button>Download Broucher</button>
+                    <button onclick="openPopup()">Download Brochure</button>
                     <a href="#contact">
                         <button>Enquire</button>
                     </a>
                 </div>
             </div>
         </section>
+
+
 
         <!-- Why Choose Nexgen Estate Planning Solutions? -->
         <!-- update this section  -->
@@ -576,10 +588,11 @@
             <div class="container">
                 <p>&copy; 2025 Nexgen Estate Planning Solutions. All rights reserved.</p>
                 <ul class="footer-links">
-                    <li><a href="https://www.aafmindia.co.in/PrivacyPolicy.aspx" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aafmindia.co.in/TermsofUseAAFMWebsite.aspx" target="_blank">Terms &
+                    <li><a href="https://www.nexgentransfer.com/privacy-policy.aspx" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li><a href="https://www.nexgentransfer.com/terms-of-use.aspx" target="_blank">Terms &amp;
                             Conditions</a></li>
-                    <li><a href="https://www.aafmindia.co.in/sitemap.xml" target="_blank">Sitemap</a></li>
+                    <li><a href="https://www.nexgentransfer.com/sitemap.xml" target="_blank">Sitemap</a></li>
                 </ul>
             </div>
         </footer>
@@ -618,6 +631,44 @@
             });
         });
     });
+
+    // Open the popup
+    function openPopup() {
+        document.getElementById("broucher-popup").style.display = "flex";
+    }
+
+    // Close the popup
+    document.addEventListener("DOMContentLoaded", function () {
+        const closeButton = document.querySelector(".close-popup");
+        if (closeButton) {
+            closeButton.addEventListener("click", function () {
+                document.getElementById("broucher-popup").style.display = "none";
+            });
+        }
+    });
+
+    // Close the popup when clicking outside the content
+    window.addEventListener("click", function (e) {
+        const popup = document.getElementById("broucher-popup");
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
 </script>
+
+<!-- Popup for Download Broucher -->
+<div id="broucher-popup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Download Broucher</h2>
+        <form id="broucher-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email ID" required>
+            <input type="tel" name="phone" placeholder="Phone No." required pattern="[0-9]{10}" maxlength="10"
+                title="Please enter a valid 10-digit phone number">
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+</div>
 
 </html>
